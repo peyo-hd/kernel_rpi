@@ -49,6 +49,10 @@
 	status = "okay";
 };
 
+&hdmi {
+	status = "okay";
+};
+
 &sdhci {
 	status = "okay";
 	bus-width = <4>;
