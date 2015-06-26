@@ -75,6 +75,10 @@ static const struct hvs_format {
 		.drm = DRM_FORMAT_XRGB1555, .hvs = HVS_PIXEL_FORMAT_RGBA5551,
 		.pixel_order = HVS_PIXEL_ORDER_ABGR, .has_alpha = false,
 	},
+	{
+		.drm = DRM_FORMAT_RGBA8888, .hvs = HVS_PIXEL_FORMAT_RGBA8888,
+		.pixel_order = HVS_PIXEL_ORDER_ARGB, .has_alpha = true,
+	},
 };
 
 static const struct hvs_format *vc4_get_hvs_format(u32 drm_format)
