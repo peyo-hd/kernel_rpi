@@ -38,3 +38,7 @@
 		random = <&random>,"status";
 	};
 };
+
+&i2c2 {
+	status = "okay";
+};
