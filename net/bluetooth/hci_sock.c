@@ -730,11 +730,6 @@ static int hci_sock_bind(struct socket *sock, struct sockaddr *addr,
 			goto done;
 		}
 
-		if (!capable(CAP_NET_ADMIN)) {
-			err = -EPERM;
-			goto done;
-		}
-
 		hdev = hci_dev_get(haddr.hci_dev);
 		if (!hdev) {
 			err = -ENODEV;
